@@ -62,7 +62,8 @@ SHAPES | MATH | INPUT | COLOR
 [square(x, y, s, [tl], [tr], [br], [bl])](https://p5js.org/reference/#/p5/square) |
 
 ### How you can use one or two of these...
-[Watch "1 minute of Code_ Circle Follow" on Vimeo](https://vimeo.com/536205609){pw=ATOTHEK}<br/>
+[Watch "Minute of Code: Cirlce"](https://vimeo.com/536205609) {pw=ATOTHEK}<br/>
+[Watch "Minute of Code: Circle Follow"](https://vimeo.com/536205609){pw=ATOTHEK}<br/>
 ### Primitive Shapes Udated [EXAMPLE SKETCH]: 
 <img src="images/primitive_shapes_mouseFollow.JPG" width="400" height="auto"/>
 <pre>
