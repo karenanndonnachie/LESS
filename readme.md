@@ -1,4 +1,4 @@
-# LESS & P5js \~~> Chapter 1: in the beginning
+# LESS & P5js \~~> LESS_01: in the beginning
 After working the first half of the semester in analog collage work, we are now developing digital collage tools. You can follow the tutorials and demos here.
 # P5js (the web version of Processing)
 This folder will contain snippets from Processing workshops and tutorials.<br/>
