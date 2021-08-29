@@ -21,9 +21,9 @@ Common functions found in setup() include:
 <pre>createCanvas (w, h); // makes a canvas
 background (r, g, b); // colours the canvas with whatever colour you put in as r, g, b
 </pre>
-* [Watch "1 Minute of Code #01: p5js SETUP CANVAS" on Vimeo](https://vimeo.com/536189627){pw=A2THEK}
+:tv: [Watch "1 Minute of Code #01: p5js SETUP CANVAS" on Vimeo](https://vimeo.com/536189627){pw=A2THEK}
 
-* [Then "1 Minute of Code #02: P5js Red Canvas"](https://vimeo.com/536189674){pw=A2THEK}
+:tv: [Then "1 Minute of Code #02: P5js Red Canvas"](https://vimeo.com/536189674){pw=A2THEK}
 ### Primitive Shapes [EXAMPLE SKETCH]: 
 #### An example of a simple sketch from start to end (copy and paste it into your editor -entirely overwriting the existing text- and press play -> top left of editor):
 <img src="images/primitive_shapes.JPG" width="400" height="auto"/>
@@ -62,8 +62,8 @@ SHAPES | MATH | INPUT | COLOR
 [square(x, y, s, [tl], [tr], [br], [bl])](https://p5js.org/reference/#/p5/square) |
 
 ### How you can use one or two of these...
-[Watch "Minute of Code: Cirlce"](https://vimeo.com/536205609) {pw=ATOTHEK}<br/>
-[Watch "Minute of Code: Circle Follow"](https://vimeo.com/536205609){pw=ATOTHEK}<br/>
+:tv: [Watch "Minute of Code: Cirlce"](https://vimeo.com/536205609) {pw=ATOTHEK}<br/>
+:tv: [Watch "Minute of Code: Circle Follow"](https://vimeo.com/536205609) {pw=ATOTHEK}<br/>
 ### Primitive Shapes Udated [EXAMPLE SKETCH]: 
 <img src="images/primitive_shapes_mouseFollow.JPG" width="400" height="auto"/>
 <pre>
