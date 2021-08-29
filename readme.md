@@ -21,7 +21,7 @@ Common functions found in setup() include:
 <pre>createCanvas (w, h); // makes a canvas
 background (r, g, b); // colours the canvas with whatever colour you put in as r, g, b
 </pre>
-* [Watch "1 Minute of Code #01: p5js SETUP CANVAS" on Vimeo pw=A2THEK](https://vimeo.com/536189627)
+* [Watch "1 Minute of Code #01: p5js SETUP CANVAS" on Vimeo](https://vimeo.com/536189627){pw=A2THEK}
 
 * [Then "1 Minute of Code #02: P5js Red Canvas"](https://vimeo.com/536189674){pw=A2THEK}
 ### Primitive Shapes [EXAMPLE SKETCH]: 
