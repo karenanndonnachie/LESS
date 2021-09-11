@@ -7,6 +7,8 @@
 * step 2 = start a new sketch with a full size canvas and save your sketch (name as loadimage or something recognisable)
 * step 3 = drag the image from your finder to the white edit section of your sketch
 * step 4 = declare a variable (you can name it anything you want, except protected names like 'image' or 'shape' etc., I use pic in the example)
+* step 5 = preload the image into your pic variable
+* step 6 = display the image in the draw (or setup) function (use <code>image(x, y, w, h)</code>)
 
 <pre>
 <code>
