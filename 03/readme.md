@@ -1,82 +1,34 @@
 # Part 3 of LESS Digital tools
 
-# External or 'Add-On' libraries:
+# LOADING IMAGES IN P5JS 
+<img src="https://github.com/karenanndonnachie/LESS/blob/main/previewImages/turtle_topLeft.JPG" width="400px"/><br/>
+* [See video here](https://vimeo.com/602397543) {pw ATOTHEK}
+* step 1 = make or dl an image (**do not use filenames with spaces or special characters**) save at a 'decent' size (not too many kb & not too huge) & remember most browsers/devices are less than 1400 px across, while mobiles are around 400px across
+* step 2 = start a new sketch with a full size canvas and save your sketch (name as loadimage or something recognisable)
+* step 3 = drag the image from your finder to the white edit section of your sketch
+* step 4 = declare a variable (you can name it anything you want, except protected names like 'image' or 'shape' etc., I use pic in the example)
 
-## P5.play :  a library for p5.js for animation, gaming and using sprites
-Paolo Pedercini's p5.play Library: http://molleindustria.github.io/p5.play/ <br/>
-Allison Parrish explains it all : https://creative-coding.decontextualize.com/making-games-with-p5-play/
-
-## Starter Notes:
-# Using sprites for animation/games in P5js
-Sprites are useful when you have repeated graphics or character, objects, etc..
-Please see here for the entire tutorial: https://creative-coding.decontextualize.com/making-games-with-p5-play/
-
-Creating a sprite in p5.play is accomplished using the createSprite() function. This function returns a sprite object, which itself has a number of attributes and methods that allow us to query and change properties of the sprite.
-Here’s a simple example that creates a single sprite:
 <pre>
 <code>
-var spr;
+var pic; //declare variable which will hold the image
+
+function preload(){
+  pic=loadImage("data/AAA_PATRICIA_PICCININI.jpg"); //assign our loaded image to pic **note that the path must be exact!**
+}
+
 function setup() {
-  createCanvas(400, 400);
-  spr = createSprite(
-    width/2, height/2, 40, 40);
-  spr.shapeColor = color(255);
-  spr.velocity.y = 0.5;
+ createCanvas(windowWidth, windowHeight);
+ background(255,255,0);
 }
+
 function draw() {
-  background(50);
-  drawSprites();
-}
-function mousePressed() {
-  spr.position.x = mouseX;
-  spr.position.y = mouseY;
+  //to show an image, use the image() function ~> image(x, y, w, h)
+  //image(pic, 0, 0); //display image in top left corner at natural size (no w or h)
+  //image(pic, 0, 0, 400, 300); //display image in top left corner at 400 x 300 px
+  image(pic, mouseX, mouseY, 400, 300); //display image at 400 x 300px and make it follow the mouse
 }
 </code>
 </pre>
 
-## Multiple sprites
-You can call the createSprite() function as many times as you want to! The p5.play framework keeps track of all the sprites you’ve added behind the scenes (so you don’t need to create your own data structure to store them). In the following example, I’ve written some code in mousePressed() that creates a new sprite whenever the user clicks the mouse:
 
-## For example.... Using sprites in groups
-<pre>
-<code>
-var clouds;
-var birds;
-function setup() {
-  createCanvas(400, 400);
-  clouds = new Group();
-  birds = new Group();
-
-  for (var i = 0; i < 10; i++) {
-    var c = createSprite(
-      random(width), random(height),
-      random(25, 100), random(25, 100));
-    c.shapeColor = color(random(200, 255));
-    clouds.add(c);
-  }
-  for (var i = 0; i < 5; i++) {
-    var b = createSprite(
-      random(width), random(height),
-      random(10, 50), random(5, 25));
-    b.shapeColor = color(255, 0, random(255));
-    b.friction = random(0.97, 0.99);
-    b.maxSpeed = random(1, 4);
-    b.rotateToDirection = true;
-    birds.add(b);
-  }
-}
-function draw() {
-  background(0, 150, 240);
-  for (var i = 0; i < clouds.length; i++) {
-    clouds[i].position.x += clouds[i].width * 0.01;
-    if (clouds[i].position.x > width) {
-      clouds[i].position.x = 0;
-    }
-  }
-  for (var i = 0; i < birds.length; i++) {
-    birds[i].attractionPoint(0.2, mouseX, mouseY);
-  }
-  drawSprites();
-}
-</code></pre>
  
