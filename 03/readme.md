@@ -32,5 +32,5 @@ function draw() {
 </code>
 </pre>
 
-
+<img src="https://github.com/karenanndonnachie/LESS/blob/main/previewImages/loadimage.gif" width="400px"/><br/>
  
