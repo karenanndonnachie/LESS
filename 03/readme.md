@@ -33,4 +33,6 @@ function draw() {
 </pre>
 
 <img src="https://github.com/karenanndonnachie/LESS/blob/main/previewImages/loadimage.gif" width="400px"/><br/>
- 
+ <br/>
+ <br/>
+ # [NEXT](https://github.com/karenanndonnachie/LESS/tree/main/04) : How to use multiple images
