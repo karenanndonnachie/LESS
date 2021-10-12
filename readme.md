@@ -2,7 +2,7 @@
 After working the first half of the semester in analog collage work, we are now developing digital collage tools. You can follow the tutorials and demos here.
 # P5js (the web version of Processing)
 This folder will contain snippets from Processing workshops and tutorials.<br/>
-Some simple starter instructions below.
+Some simple starter instructions below. <br/>[Some great case studies in generative art here](caseStudies.md)
 
 ## Processing START HERE:
 Download Processing ( https://processing.org/download/ ) and initiate the P5js mode (from the arrow on the top right of the Processing window --> 'add mode'->p5.js.<br/>
