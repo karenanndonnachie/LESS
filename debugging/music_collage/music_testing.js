@@ -44,13 +44,14 @@ function draw() {
   if (gogo==true){
   for (let i=0; i<buttons.length; i++){ 
     if (buttons[i].x < mouseX && mouseX < buttons[i].x + buttons[i].w && mouseY > buttons[i].y && mouseY < buttons[i].y + buttons[i].h){
-      console.log("hit");
-      buttons[i].playTrack=!playTrack;
-      buttons[i].hover();
+      if (frameCount>20){
+        console.log("hit");
+        buttons[i].playTrack=!playTrack;
+        buttons[i].hover();
+        frameCount=0;
+      }
     }
-    else {
     buttons[i].show();}
-  }
   }
   else {text('click to start', width/2, height/2);}
  }
