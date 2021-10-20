@@ -1,4 +1,4 @@
-var moon, butterfly, butterfly2, uh, mountain, grass, drummer, dancer, bell, oldman, melody, bell, kick, uh, bass, bass2, snare, lead, lead2, snare2, uhsound, avWidth;
+var moon, butterfly, butterfly2, uh, mountain, grass, drummer, dancer, bellPic, bell, oldman, melody, kick, uh, bass, bass2, snare, lead, lead2, snare2, uhsound, avWidth;
 var tracks=[];
 var buttons=[];
 var playTrack=false;
@@ -14,7 +14,7 @@ function preload() {
   grass = loadImage("data/grass.png");
   drummer = loadImage("data/drummer.png");
   dancer = loadImage("data/dance.png");
-  bell = loadImage("data/bell_2.png");
+  bellPic = loadImage("data/bell_2.png");
   oldman = loadImage("data/oldman.png"); 
   melody = loadSound("data/melody.mp3");
   uhsound = loadSound("data/uh.mp3");
@@ -33,7 +33,7 @@ function setup() {
   background (255, 210, 97); 
   avWidth  =  width/13;
   tracks=[bass2, lead2,  bass, bell, lead, uhsound,  kick, snare, melody, snare2];
-  buttonList=[grass, mountain,  moon, butterfly, butterfly2, uh, drummer, dancer, bell, oldman];
+  buttonList=[grass, mountain,  moon, butterfly, butterfly2, uh, drummer, dancer, bellPic, oldman];
   buttons=[];
   makeScene();
   textAlign(CENTER, CENTER);
@@ -116,8 +116,8 @@ function makeScene(){
   buttons.push(new ButtonMaker(buttonList[6], tracks[6], width/8, 0.5*height, avWidth, avWidth/drummer.width*drummer.height, playTrack));
    //dancer 7
   buttons.push(new ButtonMaker(buttonList[7], tracks[7], width/2, height/3, avWidth, avWidth/dancer.width*dancer.height, playTrack));
-   //bell
-  //buttons.push(new ButtonMaker(buttonList[8], tracks[8], width/3, height/4, avWidth, avWidth/bell.width*bell.height, playTrack));
+   //bellPic
+  buttons.push(new ButtonMaker(buttonList[8], tracks[8], width/3, height/4, avWidth, avWidth/bellPic.width*bellPic.height, playTrack));
    //oldman
   buttons.push(new ButtonMaker(buttonList[9], tracks[9], width/5, height/8, avWidth, avWidth/oldman.width*oldman.height, playTrack));
 }
